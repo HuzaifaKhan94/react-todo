@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UUID from 'uuid/v4';
 import TodosList from './ToDosList';
 import AddTodo from './AddTodo';
-import './Todos.css';
+import './Todos.scss';
 
 const CONTAINER_TITLE = "React Todo's"
 const TODO_KEY = 'todos';
@@ -45,7 +45,7 @@ class ToDos extends Component {
     render() {
         return (
             <div className="todos-container container panel is-centered">
-                <h1 className="title has-text-centered panel-heading">{CONTAINER_TITLE}</h1>
+                <h1 className="title has-text-centered">{CONTAINER_TITLE}</h1>
                 <AddTodo addTodo={this.addTodo} />
                 <TodosList todos={this.state.todos} deleteTodo={this.deleteTodo} />
             </div>

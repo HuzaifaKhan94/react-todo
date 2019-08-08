@@ -1,0 +1,35 @@
+@import "src/styling";
+
+$todo-input-shadow: 0px 8px 6px -6px #9ac9e8;
+$todo-input-height: $base-spacing*5;
+$todo-input-font-size: 16pt;
+$no-todos-font-colour: #6b6b6b;
+
+.todo-item {
+    .card-content {
+        margin: $base-spacing;
+    }
+}
+
+.todos-container {
+    .title {
+        padding-top: $base-spacing*3;
+        font-family: $raleway;
+    }
+}
+
+.todo-input-container {
+    margin-bottom: $base-spacing*2;
+    box-shadow: $todo-input-shadow;
+    input {
+        height: $todo-input-height;
+        font-size: $todo-input-font-size;
+    }
+}
+
+.no-todos-display {
+    border: $default-border;
+    padding: $base-spacing*2;
+    margin: $base-spacing;
+    color: $no-todos-font-colour;
+}

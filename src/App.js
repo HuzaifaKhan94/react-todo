@@ -3,7 +3,7 @@ import ToDos from './Todos/ToDos';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App react-container">
       <ToDos/>
     </div>
   );

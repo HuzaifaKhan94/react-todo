@@ -8,6 +8,7 @@ class AddTodo extends Component {
     }
 
     handleChange = event => {
+        // Set content when detecting change from input
         this.setState({
             content: event.target.value
         })
@@ -25,7 +26,7 @@ class AddTodo extends Component {
 
     render() {
         return (
-            <div className="">
+            <div className="todo-input-container">
                 <form onSubmit={this.handleFormSubmit}>
                     <p className="control is-expanded">
                         <input onChange={this.handleChange} className="input" placeholder={PLACEHOLDER} value={this.state.content}></input>

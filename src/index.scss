@@ -1,0 +1,15 @@
+@import "./styling.scss";
+
+$app-background-colour: #f0f3f5;
+
+body {
+  margin: 0;
+  font-family: $roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.react-container {
+  height: 100vh;
+  background: $app-background-colour;
+}
